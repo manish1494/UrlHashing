@@ -1,0 +1,7 @@
+var message= "<%=@link.errors.full_messages.join("") <<'' %>";
+
+var hashcode= "<%=@link.hash_code %>";
+//console.log(hashcode)
+
+var element =document.getElementById('short-link');
+element.innerHTML=message;

@@ -1,0 +1,18 @@
+<div class="container">
+ <div class="P-5">
+   <div clsss="cards">
+     <div class="card-body">
+       <%=form_with scope: :link, url: links_path, remote: true  do  |f| %>
+         <h5 class='card-title'>Get your simplified link by clicking on Create Link</h5>
+         <%=f.text_field :original_url,class:'form-control', placeholder:"Enter url...." %>
+         <%= f.submit "Create Link",class:'btn btn-primary mt-3'%>
+       <%end%>
+     </div>
+     <div id="short-link"> </div>
+   </div>
+ </div>
+</div>
+
+
+
+
