@@ -13,8 +13,6 @@ class Compact
 
   end
 
-  #will come back
-  # assuming it will give new unique code if exist.
   def hashed_code
       loop do
           code =get_unique_code
