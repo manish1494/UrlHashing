@@ -27,7 +27,7 @@ class Compact
   def generate_hash_link
     hashed_value =hashed_code
     link_model.create(original_url:url ,hash_code:hashed_value)
-    hashed_value
+
   end
 
 end
