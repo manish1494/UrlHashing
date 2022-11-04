@@ -9,7 +9,7 @@ class Link < ApplicationRecord
    def verify_original_url
       if !original_url.empty?
          uri=  URI.parse(original_url)
-         if uri.host.nil?
+         if uri.host.nil? || Rails.application.config.domain_path
            errors.add(:original_url,"Invalid url format")
          end
 
