@@ -24,6 +24,7 @@ module UrlHashing
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
     config.domain_path =  'http://0.0.0.0:3000'
+    config.domain_host =    '0.0.0.0:3000'
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

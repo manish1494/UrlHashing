@@ -7,7 +7,7 @@ Rails.application.configure do
   config.cache_classes = false
 
   config.domain_path =  'http://0.0.0.0:3000'
-
+  config.domain_host =    '0.0.0.0'
 
   # Do not eager load code on boot.
   config.eager_load = false
