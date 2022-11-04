@@ -6,7 +6,16 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "engines": {
+      "node": "16.x"
+    },
+  "scripts": {
+    "start": "node nodeConfig.js && webpack --watch --display-error-details webpack.config.js",
+    "prod": "node nodeConfig.js && webpack --display-error-details webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+
   },
   "version": "0.1.0",
   "devDependencies": {
